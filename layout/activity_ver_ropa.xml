@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listViewProductos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lilita"
+    tools:context=".VerRopaActivity">
+
+
+    <ListView
+        android:id="@+id/listviewProducts"
+        android:layout_width="393dp"
+        android:layout_height="645dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <Button
+        android:id="@+id/agregarProducto"
+        android:layout_width="186dp"
+        android:layout_height="82dp"
+        android:onClick="launchAgregarProducto"
+        android:text="@string/agregar_producto"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMostrarRopa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+    <!--
+    <RelativeLayout
+        android:id="@+id/listProducts"
+        android:layout_width="391dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="546dp"
+        android:padding="6dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMostrarRopa">
+
+        <TextView
+            android:id="@+id/ididproduct"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="71dp"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:text="@string/id_del_producto"
+            android:textSize="24sp"
+            tools:text="@string/id_del_producto" />
+
+        <TextView
+            android:id="@+id/idDescriocionProducto"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/descripcion"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/precioProducto"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:text="@string/precio"
+            ndroid:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    -->
+    <Button
+        android:id="@+id/buttonMostrarRopa"
+        android:layout_width="179dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="launchMostrarRopa"
+        android:text="Mostrar ropa"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/agregarProducto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
